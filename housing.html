@@ -75,7 +75,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="index.html" class="nav-link active">
+                <a href="index.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Overview</p>
                 </a>
@@ -83,8 +83,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </ul>
           </li>
           <li class="nav-item">
-            <a href="housing.html" class="nav-link">
-              <i class="nav-icon fas fa-chart-line"></i>
+            <a href="./pages/layout/indicators/housing.html" class="nav-link active">
+              <i class="nav-icon fas fa-city"></i>
               <p>
                 Housing
               </p>
@@ -104,12 +104,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Economic Overview</h1>
+            <h1 class="m-0">Housing Breakdown</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active">Economic Overview</li>
+              <li class="breadcrumb-item active">Housing Breakdown</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -121,100 +121,48 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <div class="card">
-              <div class="card-body">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container">
-                  <div class="tradingview-widget-container__widget"></div>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-                  {
-                  "symbol": "CAPITALCOM:DXY",
-                  "width": "100%",
-                  "height": "300",
-                  "locale": "en",
-                  "dateRange": "60M",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "autosize": true,
-                  "largeChartUrl": ""
-                }
-                  </script>
-                </div>
-                <!-- TradingView Widget END -->
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-chart-line mr-1"></i>
+                  US Average House Price
+                </h3>
+              </div>
+              <div class="card-body container">
+                <!-- Trading Average House Price START -->
+                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=usaahp&v=202307291343V20230410&d1=20130806&h=700&w=900' height='700' width='900' frameborder='0' scrolling='no'></iframe>
+                <!-- Trading Average House Price END -->
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <div class="card">
-              <div class="card-body">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container">
-                  <div class="tradingview-widget-container__widget"></div>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-                  {
-                  "symbol": "NYMEX:CL1!",
-                  "width": "100%",
-                  "height": "300",
-                  "locale": "en",
-                  "dateRange": "60M",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "autosize": true,
-                  "largeChartUrl": ""
-                }
-                  </script>
-                </div>
-                <!-- TradingView Widget END -->
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-chart-line mr-1"></i>
+                  US 30-Year Interest Rate
+                </h3>
+              </div>
+              <div class="card-body container">
+                <!-- Trading 30-Year Interest Rate START -->
+                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=usa3ymr&v=202308031754V20230410&d1=20130806&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
+                <!-- Trading 30-Year Interest Rate END -->
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <div class="card">
-              <div class="card-body">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container">
-                  <div class="tradingview-widget-container__widget"></div>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-                  {
-                  "symbol": "CBOT:ZN1!",
-                  "width": "100%",
-                  "height": "300",
-                  "locale": "en",
-                  "dateRange": "60M",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "autosize": true,
-                  "largeChartUrl": ""
-                }
-                  </script>
-                </div>
-                <!-- TradingView Widget END -->
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-chart-line mr-1"></i>
+                  US Housing Inventory
+                </h3>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container">
-                  <div class="tradingview-widget-container__widget"></div>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-                  {
-                  "symbol": "CBOT:ZT1!",
-                  "width": "100%",
-                  "height": "300",
-                  "locale": "en",
-                  "dateRange": "60M",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "autosize": true,
-                  "largeChartUrl": "",
-                  "chartOnly": false
-                }
-                  </script>
-                </div>
-                <!-- TradingView Widget END -->
+              <div class="card-body container">
+                <!-- Trading Housing Inventory START -->
+                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=usathi&v=202307221026V20230410&d1=20130806&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
+                <!-- Trading Housing Inventory END -->
               </div>
             </div>
           </div>
@@ -226,13 +174,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-chart-line mr-1"></i>
-                  US GDP %
+                  US Building Permits
                 </h3>
               </div>
               <div class="card-body container">
-                <!-- Trading Economics GDP START -->
-                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=gdp+cqoq&v=202307271254V20230410&type=type=column&h=700&w=900' height='700' width='900' frameborder='0' scrolling='no'></iframe>
-                <!-- Trading Economics GDP END -->
+                <!-- Trading Building Permits START -->
+                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=unitedstabuiper&v=202307261156V20230410&d1=20130806&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
+                <!-- Trading Building Permits END -->
               </div>
             </div>
           </div>
@@ -241,13 +189,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-chart-line mr-1"></i>
-                  US Inflation %
+                  US Housing Starts
                 </h3>
               </div>
               <div class="card-body container">
-                <!-- Trading Economics Inflation START -->
-                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=cpi+yoy&v=202307190815V20230410&d1=20180804&type=type=line&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe><!-- Trading Economics GDP END -->
-                <!-- Trading Economics Inflation END -->
+                <!-- Trading Housing Starts START -->
+                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=unitedstahousta&v=202307312327V20230410&d1=20130806&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
+                <!-- Trading Housing Starts END -->
               </div>
             </div>
           </div>
@@ -256,61 +204,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-chart-line mr-1"></i>
-                  US NonFarm Payrolls
+                  US Pending Home Sales
                 </h3>
               </div>
               <div class="card-body container">
-                <!-- Trading Economics NonFarm START -->
-                <iframe class="responsive-iframe" src='https://tradingeconomics.com/embed/?s=nfp+tch&v=202308041250v20230410&h=700&w=900&ref=/united-states/non-farm-payrolls' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
-                <!-- Trading Economics NonFarm END -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /.row -->
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-chart-line mr-1"></i>
-                  US Manufacturing PMI New Orders
-                </h3>
-              </div>
-              <div class="card-body container">
-                <!-- Trading Economics PMI New Orders START -->
-                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=usaimno&v=202308011426V20230410&d1=20180804&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
-                <!-- Trading Economics PMI New Orders END -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-chart-line mr-1"></i>
-                  US Manufacturing PMI
-                </h3>
-              </div>
-              <div class="card-body container">
-                <!-- Trading Manufacturing PMI START -->
-                <iframe class="responsive-iframe" src='https://tradingeconomics.com/embed/?s=unitedstamanpmi&v=202308031352V20230410&d1=20180804&h=700&w=900&ref=/united-states/manufacturing-pmi' height='700' width='900'  frameborder='0' scrolling='no'></iframe><!-- Trading Economics GDP END -->
-                <!-- Trading Manufacturing PMI END -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-chart-line mr-1"></i>
-                  US Services PMI
-                </h3>
-              </div>
-              <div class="card-body container">
-                <!-- Trading Services PMI START -->
-                <iframe class="responsive-iframe" src='https://tradingeconomics.com/embed/?s=unitedstaserpmi&v=202308031352V20230410&d1=20180804&h=700&w=900&ref=/united-states/services-pmi' height='700' width='900'  frameborder='0' scrolling='no'></iframe><!-- Trading Economics GDP END -->
-                <!-- Trading Services PMI END -->
+                <!-- Trading Pending Home Sales START -->
+                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=unitedstapenhomsal&v=202307271416V20230410&d1=20130806&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
+                <!-- Trading  Pending Home Sales END -->
               </div>
             </div>
           </div>
@@ -322,13 +222,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-chart-line mr-1"></i>
-                  US Employment Costs
+                  US Existing Home Sales
                 </h3>
               </div>
               <div class="card-body container">
-                <!-- Trading Employment Costs START -->
-                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=unitedstaempcosind&v=202307281244V20230410&d1=20130805&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
-                <!-- Trading Employment Costs END -->
+                <!-- Trading Existing Home Sales START -->
+                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=unitedstaexihomsal&v=202307201408V20230410&d1=20130806&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe><!-- Trading Economics GDP END -->
+                <!-- Trading Existing Home Sales END -->
               </div>
             </div>
           </div>
@@ -337,13 +237,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-chart-line mr-1"></i>
-                  US Consumer Spending
+                  US New Home Sales
                 </h3>
               </div>
               <div class="card-body container">
-                <!-- Trading Consumer Spending START -->
-                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=unitedstaconspe&v=202307271434V20230410&d1=20200803&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
-                <!-- Trading Consumer Spending END -->
+                <!-- Trading New Home Sales START -->
+                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=unitedstanewhomsal&v=202307312327V20230410&d1=20130806&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe><!-- Trading Economics GDP END -->
+                <!-- Trading New Home Sales END -->
               </div>
             </div>
           </div>
@@ -352,13 +252,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-chart-line mr-1"></i>
-                  US Michigan Sentiment
+                  US Price to Rent Ratio
                 </h3>
               </div>
               <div class="card-body container">
-                <!-- Trading Michigan Sentiment START -->
-                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=umcsent%3afred&lbl=0&v=202307201210V20230410&d1=20130805&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe>
-                <!-- Trading Michigan Sentiment  END -->
+                <!-- Trading P/R Ratio START -->
+                <iframe class="responsive-iframe" src='https://d3fy651gv2fhd3.cloudfront.net/embed/?s=usprr&v=202307131633V20230410&d1=20130806&h=700&w=900' height='700' width='900'  frameborder='0' scrolling='no'></iframe><!-- Trading Economics GDP END -->
+                <!-- Trading P/R Ratio END -->
               </div>
             </div>
           </div>
